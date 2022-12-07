@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   input: {
-    borderColor: theme.colors.secondary,
+    borderColor: theme.colors.primary,
     borderWidth: 1,
     height: 40,
     margin: 12,
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     minWidth: "70%",
   },
   btnSearch: {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme.colors.secondary,
     borderRadius: 5,
     minWidth: "20%",
     justifyContent: "center",
@@ -51,7 +51,7 @@ const Serch = () => {
           onChangeText={(txt) => setPkemonName(txt)}
         />
         <TouchableOpacity style={styles.btnSearch} onPress={handleClickSearch}>
-          <Ionicons name="search" size={24} color={theme.colors.secondary} />
+          <Ionicons name="search" size={24} color={theme.colors.primary} />
         </TouchableOpacity>
       </Row>
     </View>

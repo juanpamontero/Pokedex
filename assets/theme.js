@@ -1,7 +1,7 @@
 const theme = {
     colors: {
-        primary: '#72BDA3',
-        secondary: '#023C40',
+        secondary: '#72BDA3',
+        primary: '#023C40',
         tertiary: '#AC3931',
         textPrimary: '#fff',
         textSecondary: '#000',
@@ -15,10 +15,10 @@ const theme = {
         main: 'System',
     },
     fontWeights: {
-        bold: '500',
-        semibold: '400',
+        bold: '700',
+        semibold: '500',
         normal: '300'
-    },
+    }
 }
 
 export default theme;

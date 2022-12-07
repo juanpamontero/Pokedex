@@ -30,7 +30,7 @@ export const TabNavigator = () => {
     return (
         <NavigationContainer>
             <Tab.Navigator screenOptions={{
-                tabBarActiveTintColor: theme.colors.secondary,
+                tabBarActiveTintColor: theme.colors.primary,
             }}>
                 <Tab.Screen name="Pokedex" component={MyStack} options={{
                     tabBarIcon: ({ color, size }) => (

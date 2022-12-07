@@ -9,6 +9,8 @@ import { StyledText } from "./Textos";
 import { useFetch } from "../services/Fetch";
 import Loader from "./Loader";
 import { useNavigation } from "@react-navigation/native";
+import theme from "../assets/theme";
+import { capitalized } from "../services/stringPasrser";
 
 export const Card = ({ name, url }) => {
   const navigate = useNavigation();
@@ -27,7 +29,7 @@ export const Card = ({ name, url }) => {
     btn: {
       margin: 10,
       borderRadius: 10,
-      backgroundColor: "#72BDA3",
+      backgroundColor: theme.colors.primary,
       marginTop: 30,
     },
   });
@@ -52,7 +54,7 @@ export const Card = ({ name, url }) => {
         )}
         {/* <PokemonName name={name} /> */}
         <StyledText bold big>
-          {name}
+          {capitalized(name)}
         </StyledText>
       </View>
     </TouchableHighlight>
