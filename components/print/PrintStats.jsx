@@ -23,6 +23,9 @@ const totalStats = (stats) => {
 const PrintStats = ({ dataStats }) => {
   return (
     <View style={styles.container}>
+      <StyledText textSecondary big>
+        Stats
+      </StyledText>
       {dataStats.map((stat) => (
         <View key={stat.stat.name}>
           <Stats
@@ -47,7 +50,8 @@ const PrintStats = ({ dataStats }) => {
 
 const styles = StyleSheet.create({
   container: {
-    margin:3
+    margin: 3,
+    alignItems: "center",
   },
 });
 

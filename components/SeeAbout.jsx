@@ -7,8 +7,8 @@ import {
 } from "react-native";
 import { StyledText } from "./Textos";
 import PrintStats from "./print/PrintStats";
-import PrintTypes from "./print/PrintTypes";
 import PokedataBox from "./PokedataBox";
+import { Abilities } from "./Abilities";
 
 const SeeAbout = ({ pokemonData }) => {
   const types = pokemonData.types;
@@ -24,8 +24,9 @@ const SeeAbout = ({ pokemonData }) => {
             name={pokemonData.name}
             height={pokemonData.height}
             weight={pokemonData.weight}
+            type={pokemonData.types}
           />
-          <PrintTypes types={types} />
+          <Abilities habilities={pokemonData.abilities} />
           <PrintStats dataStats={pokemonData.stats} />
         </View>
       </ScrollView>
@@ -37,6 +38,8 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     alignItems: "center",
+    marginBottom: 10,
+    margin: 3,
   },
   img: {
     width: 150,

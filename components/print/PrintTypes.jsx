@@ -5,7 +5,6 @@ import Row from "../Row";
 const PrintTypes = ({ types }) => {
   return (
     <View>
-      {console.log(types)}
       <Row>
         {types.map((type) => (
           <View key={type.type.name} style={styles.itemTypes}>

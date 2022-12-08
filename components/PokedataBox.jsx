@@ -3,13 +3,15 @@ import { StyledText } from "./Textos";
 import theme from "../assets/theme";
 import { capitalized } from "../services/stringPasrser";
 import Row from "./Row";
+import PrintTypes from "./print/PrintTypes";
 
-const PokedataBox = ({ name, weight, height }) => {
+const PokedataBox = ({ name, weight, height, type }) => {
   return (
     <View style={styles.box}>
       <StyledText big bold>
         {capitalized(name)}
       </StyledText>
+      <PrintTypes types={type} />
       <View>
         <Row>
           <View style={styles.itemTypes}>
